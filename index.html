@@ -1,0 +1,233 @@
+<html>
+   <head>
+      <title>Dinner at Blackskull Spire</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+   </head>
+   <body>
+      <div class="header">
+         <h2>Dinner at Blackskull Spire</h2>
+      </div>
+      <div class="row">
+         <div class="column left">
+            <p id="sidemap"><pre>
+                          BlackSkull Spire
+
+                                 +
+                                 |
+                                +++
+                                | | <span id="top" style='color: #000000;'><-- Droop</span>
+                            ++  | |  ++
+                             +--+-+--+
+                             |       |
+                             | + + + |
+                             | | | | | <span id="3" style='color: #000000;'><-- Droop</span>
+                             | | | | |
+                             | + + + |
+                             |       |
+                            ++-------++
+                            |         |
+                            | +-+ +-+ |
+                            | | | | | | <span id="2" style='color: #000000;'><-- Droop</span>
+                            | | | | | |
+                            | +-+ +-+ |
+                            |         |
+                          +-+---------+-+
+                          |             |
+                          |    +-+ +-+  |
+                          +--+ | | | |  | <span id="1" style='color: #000000;'><-- Droop</span>
+                <span id="o" style='color: #000000;'>Droop --></span> |  | +-+ +-+  |
+                          |  |          |
+XXXX+------------------------+----------+
+   XXX                XX  |             |
+   X                   XX |             | <span id="b" style='color: #000000;'><-- Droop</span>
+   X                   XX | +-+ +-+ +-+ |
+   X                    XX| | | | | | | |X
+   X                     X| +-+ +-+ +-+ |X
+ XXX                     X+-------------+XX
+XX                       XXX             X
+XX                         X     XXXX    X
+ X                         XX            X <span id="s" style='color: #000000;'><-- Droop ?</span>
+ X                          XXX          X
+ X                            XX         X
+X                              XX       XX
+X                               X     XX  X
+X                               XX     X  XX
+X                                X     X   X
+XX                               XX        X
+X                               XX       XX
+X                                X       XX
+X                               XX      X
+X                               XX      X             
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        XXXXXXXXXXXXXXXXXX 
+           </pre></p>
+         </div>
+         <div class="column middle">
+            <p id="log">
+               Welcome to Dinner at Blackskull Spire, a simple JavaScript-based Text Adventure game, based on true story of a DnD 5e campaign.<br><br>
+
+               Type <span style='color: #FF0000;'>Help</span> anytime during your adventures to review controls.<br><br>   
+
+               Type <span style='color: #FF0000;'>Inventory</span> anytime during your adventures to review all items you collected so far.<br><br>  
+
+               Type <span style='color: #FF0000;'>Roll Perception</span> anytime to look around in the current room.<br><br>          
+
+               You are <span style='color: #9ce62a;'>Droop</span>, a Goblin Mercenary, proud member of the Blackskull Clan. You might not be the smartest Goblin around, but you are a combat veteran, always bringing the right tools needed for any fight - The only thing deadlier than your hand crossbow and rapier, is your lack of body hygiene.<br>
+               And yet, probably your most amazing skill is an unnatural talent in cooking. Granted, people are usually taken aback by a Goblin serving food, but once they try your dishes, they are enchanted.<br><br>
+
+               Tomorrow is your great chance to show off, it is the anniversary of conquering BlackSkull Spire, therefore <span style='color: #008000;'>Tork</span>, the brutish half-orc Barbarian and your friend and mentor, has put you in charge to prepare dinner for everyone on this special day.<br><br>
+
+               Thus, your story begins:<br><br>
+
+               You wake up in your quarters around noon, at the second level of the spire.<br>
+               Your <span style='color: #FF0000;'>goal</span> is to find at least <span style='color: #FF0000;'>1 main ingredient</span> and <span style='color: #FF0000;'>1 seasoning</span> ingredient and prepare them at the <span style='color: #FF0000;'>cast-iron pot</span> in the <span style='color: #FF0000;'>kitchen</span> and then serve the food in the <span style='color: #FF0000;'>Dining Hall</span> for a grandiose dinner that will once again remind everyone, that you are King <span style='color: #9ce62a;'>Droop</span> of the pot, conqueror of tastes, connoisseur of the spire.<br>
+            </p>
+            <input type="text" id="playerInput" placeholder="Enter your commands here.">
+         </div>
+         <div class="column right">
+          <div id="topr"><pre>            
+            Top level
+
+
+  +--------------------------------+
+  |                                |
+  |    Telescope                   |
+  |    <span style='color: #E6007e;'>Ellywick</span>                    |
+  |         <span style='color: #FFD700;'>Naivara</span>                |
+  |                                |
+  |                                |
+  |                                |
+  |                                |
+  |                S               |
+  |                                |
+  |                                |
+  |                  <span id="4" style='color: #000000;'>Droop</span>         |
+  |                                |
+  |                       Tree     |
+  |            <span style='color: #68707c;'>Hooded Figure</span>       |
+  |                                |
+  +--------------------------------+
+          </pre></div>
+          <div id="3r"><pre>
+             Third level
+
+
+  +-----------+--------------------+
+  |           |   Mistrust and     |
+  |  Torks    |   Justices Room    |
+  |  Room     |                    |
+  |           |         <span id="32" style='color: #000000;'>Droop</span>      |
+  |           +----E-----+---------+
+  |   <span id="31" style='color: #000000;'>Droop</span>   |          | Sibilles|
+  |           E          | Room    |
+  |           |    S     |  <span style='color: #00d5ff;'>Sibille</span>|
+  +-----------+    S     E         |
+  |           |          |  <span id="33" style='color: #000000;'>Droop</span>  |
+  |  Naivaras E   <span id="30" style='color: #000000;'>Droop</span>  |         |
+  |  Room     +----E-----+---------+
+  |           |                    |
+  |           |    Ellywicks       |
+  | <span id="35" style='color: #000000;'>Droop</span>     |    Room            |
+  |           |            <span id="34" style='color: #000000;'>Droop</span>   |
+  +-----------+--------------------+
+          </pre></div>
+          <div id="2r"><pre>
+             Second level
+
+
+  +----------+---------------------+
+  |          |                     |
+  | Guest    |                     |
+  | Quarters E        Dining Hall  |
+  |          |                     |
+  |   <span id="24" style='color: #000000;'>Droop</span>  |                     |
+  +----------+                     |
+  |          |   +----+            |
+  |   Guards |   | S <span id="20" style='color: #000000;'>D</span>|            |
+  |   Room   E   | S  E            |
+  |          |   +----+            |
+  |  <span id="23" style='color: #000000;'>Droop</span>   |                     |
+  +----------+                     |
+  |  Droops  |       <span id="22" style='color: #000000;'>Droop</span>         |
+  |  Room    |                     |
+  |          E                     |
+  |  <span id="21" style='color: #000000;'>Droop</span>   |                     |
+  +----------+---------------------+
+          </pre></div>
+          <div id="1r"><pre>
+             Ground level
+
+
+  +----------------------+---------+
+  |                      |         |
+  |       Kitchen        |         |
+  |       <span id="11" style='color: #000000;'>Droop</span>          E         |
+  |                      |         |
+  +-----------+----E-----+ <span style='color: #FF0000;'>Mistrust</span>|
+  |           |          |         |
+  |  Entrance |          | Solarium|
+ <span id="16" style='color: #000000;'>D</span>E  Hall     |    S     |         |
+  E           E    S     E         |
+  |  <span id="15" style='color: #000000;'>Droop</span>    |          |  <span id="12" style='color: #000000;'>Droop</span>  |
+  |           | <span id="10" style='color: #000000;'>Droop</span>    |         |
+  +--------E------E------+         |
+  |  Armory   | Servant  |         |
+  |  <span style='color: #0066ff;'>Justice</span>  | quarters |         |
+  |  <span id="14" style='color: #000000;'>Droop</span>    |          |         |
+  |           | <span id="13" style='color: #000000;'>Droop</span>    |         |
+  +-----------+----------+---------+
+          </pre></div>
+          <div id="br"><pre>
+             Basement level
+
+
+  +----------------------+---------+
+  |                      |         |
+  |       Storage        |         |
+  |                      |         |
+  |     <span id="b1" style='color: #000000;'>Droop</span>            |         |
+  +-----------+-----E----+         |
+  |           |          | Stables |
+  |   <span style='color: #008000;'>Tork</span>    |          |         |
+  |           E    S     E   <span id="b2" style='color: #000000;'>Droop</span> |
+  |  <span style='color: #804a00;'>Dwarf</span>    |          |         |
+  |           |  <span id="b0" style='color: #000000;'>Droop</span>   |         |
+  |           |          |         |
+  | <span id="b4" style='color: #000000;'>Droop</span>     +----------+         |
+  |           | Smiths   |         |
+  |  Forge    E Quarters |         |
+  |           |          |         |
+  |           | <span id="b3" style='color: #000000;'>Droop</span>    |         |
+  +-----------+----------+---------+
+            </pre></div>
+          <div id="sr"><pre>
+             ??? level
+
+
+  +--------------------------------+
+  |                                |
+  |                                |
+  |              <span style='color: #c14413;'>Strange Figure</span>    |
+  |                                |
+  |                                |
+  |              ???               |
+  |                                |
+  |                                |
+  |          <span id="s0" style='color: #000000;'>Droop</span>                 |
+  |                                |
+  |                                |
+  |                                |
+  |                                |
+  |                                |
+  |                                |
+  |                                |
+  +--------------------------------+
+         </pre></div></div>
+      </div>
+      <script type="text/javascript" src="rooms.js"></script>
+      <script type="text/javascript" src="text.js"></script>
+   </body>
+</html>
